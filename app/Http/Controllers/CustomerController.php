@@ -46,7 +46,7 @@ class CustomerController extends Controller
         $customer->customer_dob = $request->input('dob');
         $customer->save();
         // Redirect or return a response
-        return redirect('/customer/view');
+        return redirect(route('customer.view'));
     }
 
     /**
